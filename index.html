@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khant Min Htet CV</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --main:#4a73b8;
+    --bg:#f4f6f9;
+    --card:#ffffff;
+}
+
+body{
+    font-family:Arial;
+    background:var(--bg);
+}
+
+/* HEADER */
+.header{
+    background:var(--main);
+    color:#fff;
+    padding:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.header h1{
+   font-size:40px;
+   margin-left:40px;
+}
+
+.header p{
+   font-size: 25px;
+   margin-left:40px;
+}
+
+/* BUTTONS */
+button{
+    padding:8px 12px;
+    border:none;
+    cursor:pointer;
+}
+
+/* LAYOUT */
+.container{
+    display:flex;
+}
+
+/* LEFT */
+.left{
+    width:30%;
+    background:var(--card);
+    padding:20px;
+}
+
+.left p{
+   padding-top:15px;
+}
+
+/* RIGHT */
+.right{
+    width:70%;
+    background:var(--card);
+    padding:20px;
+}
+
+.right .item h3{
+    color:#4a73b8;
+}
+
+.right h4{
+    padding:5px 0px;
+    color:#555;
+}
+
+.right p{
+    padding:8px 0px 4px 0px;
+    font-weight: bold;
+    color:#666;
+}
+
+.right li{
+    padding:3px 0px 0px 4px;
+}
+
+.right li ul{
+    padding: 0px 0px 0px 20px;
+}
+
+/* PROFILE */
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:160px;
+    height:180px;
+    object-fit:cover;
+    border:2px solid #ddd;
+}
+
+/* TITLE */
+.title{
+    color:var(--main);
+    margin-top:20px;
+    font-size:25px;
+    border-bottom:2px solid #ddd;
+    padding-bottom:5px;
+    font-weight:bold;
+}
+
+/* SKILLS */
+.skill{
+    margin:14px 0;
+}
+
+.bar{
+    height:8px;
+    background:#ddd;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.fill{
+    height:8px;
+    background:var(--main);
+    width:0;
+    transition:1.5s;
+}
+
+/* ITEMS */
+.item{
+    margin:20px 0;
+}
+
+.item h3{
+    display:flex;
+    justify-content:space-between;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .container{
+        flex-direction:column;
+    }
+
+    .left,.right{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div>
+        <h1>KHANT MIN HTET</h1>
+        <p>Data Analyst</p>
+    </div>
+
+    <div>
+        <button onclick="toggleDark()">🌙</button>
+        <button onclick="window.print()">⬇</button>
+    </div>
+</div>
+
+<div class="container">
+
+<!-- LEFT -->
+<div class="left">
+
+    <div class="profile">
+        <!--img src="https://via.placeholder.com/160x180" id="preview"-->
+        <img src="https://raw.githubusercontent.com/khantlaykhantlay-cell/cv-profile/main/photo_2026-05-05_21-31-55.jpg" id="preview">
+        <br><br>
+        <!--input type="file" onchange="loadImage(event)"-->
+    </div>
+
+    <div class="title">Personal Details</div>
+    <p><b>Email:</b> khantlaykhantlay@gmail.com</p>
+    <p><b>Phone:</b> 09961510178</p>
+    <p><b>Address:</b> Hlaing Township, Yangon</p>
+    <p><b>Gender:</b> Male</p>
+    <p><b>Nationality:</b> Myanmar</p>
+
+    <div class="title">Technical Skills</div>
+
+    <div class="skill">Excel Advance
+        <div class="bar"><div class="fill" data-width="88%"></div></div>
+    </div>
+
+    <div class="skill">Power Query(M Code)
+        <div class="bar"><div class="fill" data-width="70%"></div></div>
+    </div>
+
+    <div class="skill">Power Pivot(DAX)
+        <div class="bar"><div class="fill" data-width="70%"></div></div>
+    </div>
+
+    <div class="skill">Power BI
+        <div class="bar"><div class="fill" data-width="80%"></div></div>
+    </div>
+
+    <div class="skill">SQL
+        <div class="bar"><div class="fill" data-width="75%"></div></div>
+    </div>
+
+    <div class="skill">Microsoft Access
+        <div class="bar"><div class="fill" data-width="80%"></div></div>
+    </div>
+
+    <div class="skill">Data Vadualization
+        <div class="bar"><div class="fill" data-width="83%"></div></div>
+    </div>
+
+    <div class="title">Web Skills</div>
+
+    <div class="skill">HTML
+        <div class="bar"><div class="fill" data-width="88%"></div></div>
+    </div>
+
+    <div class="skill">CSS
+        <div class="bar"><div class="fill" data-width="70%"></div></div>
+    </div>
+
+    <div class="skill">Bootstrap
+        <div class="bar"><div class="fill" data-width="70%"></div></div>
+    </div>
+
+    <div class="title">Language Skills</div>
+
+    <div class="skill">English
+        <div class="bar"><div class="fill" data-width="45%"></div></div>
+    </div>
+</div>
+
+<!-- RIGHT -->
+<div class="right">
+
+    <div class="title">Education</div>
+
+    <div class="item">
+        <h3>Bachelor of Science (Chemistry)<span>2012 - 2015</span></h3>
+        <p>University of Dagon, North Dagon, Yangon</p>
+    </div>
+
+    <div class="item">
+        <h3>Certificate of Power BI <span>Apr 2025</span></h3>
+        <p>Myanmar Excel Expert Team, Yangon</p>
+    </div>
+
+    <div class="item">
+        <h3>Certificate in Essential Career Skills for Business <span>May 2019</span></h3>
+        <p>Strategy First University - SFU, Yangon</p>
+    </div>
+
+    <div class="item">
+        <h3>Certificate Customer Service <span>Sep 2016</span></h3>
+        <p>Myanmar Institute of Education, Yangon</p>
+    </div>
+
+    <div class="item">
+        <h3>Certificate Basic Banking<span>Sep 2016</span></h3>
+        <p>CB Bank Training Center, Yangon</p>
+    </div>
+
+    <div class="item">
+        <h3>Certificate of Basic Computing Course<span>Jun 2012</span></h3>
+        <p>Mingalar Computer Training Center, Yangon</p>
+    </div>
+
+    <div class="title">Experience</div>
+
+    <div class="item">
+        <h3>Senior Assistant (Internet Banking Dept.) <span>Aug 2016 - Feb 2024</span></h3>
+        <h4>CB Bank PCL, Yangon</h4>
+
+        <p>Key Responsibilities:</p>
+
+        <ul>
+            <li>Managed Internet Banking operations including user setup, role assignment (Maker/Authorizer), and access control for corporate clients</li>
+            <li>Handled customer support & issue resolution related to Internet Banking services</li>
+            <li>Verified and processed customer documentation in compliance with banking policies and procedures</li>
+            <li>Provided client onboarding & training on Internet Banking Web Portal usage</li>
+            <li>Processed user fee collection, voucher creation, and transaction recording</li>
+        </ul>
+
+        <p>Operations & Administration:</p>
+
+        <ul>
+            <li>Managed OTP Hardware Token lifecycle (ordering, inventory tracking, distribution to branches)</li>
+            <li>Maintained sales and inventory records of tokens across branches</li>
+            <li>Coordinated with branches for smooth service delivery</li>
+        </ul>
+
+        <p>Reporting & Analysis:</p>
+
+        <ul>
+            <li>Prepared Daily / Monthly reports on:
+                <ul>
+                  <li>Transaction revenue across digital channels</li>
+                  <li>User activity and usage statistics</li>
+                  <li>Token sales performance</li>
+                </ul>
+            </li>
+            <li>Compiled and submitted regulatory reports (monthly/yearly) to Central Bank</li>
+            <li>Developed data visualizations (Excel, Power BI) for performance tracking</li>
+            <li>Conducted sales and product analysis to support business decisions</li>
+        </ul>
+
+        <p>System & Testing:</p>
+
+        <ul>
+            <li>Performed UAT (User Acceptance Testing) for Internet Banking Web Portal</li>
+            <li>Identified and reported system errors and improvement areas</li>
+        </ul>
+    </div>
+
+  <div class="item">
+        <h3>Operation Associate (Data Analyst) <span>Aug 2016 - Feb 2024</span></h3>
+        <h4>GGI Nipponlife Co.Ltd, Yangon</h4>
+
+        <p>Key Responsibilities:</p>
+
+        <ul>
+            <li>Performed data analysis and reporting using SQL and Excel due to system limitations</li>
+            <li>Designed and optimized data flows and table structures (data modeling)</li>
+            <li>Calculated Premium Bill Collection based on payment modes:
+                <ul>
+                  <li>Monthly / Quarterly / Semi-Annual / Annual</li>
+                </ul>
+            </li>
+            <li>Analyzed collection performance and percentage metrics</li>
+        </ul>
+
+        <p>Business Analysis:</p>
+
+        <ul>
+            <li>Segmented overdue policies into levels for better tracking and action</li>
+            <li>Calculated and analyzed policy persistency rates</li>
+            <li>Provided insights into collection efficiency and customer behavior</li>
+        </ul>
+
+        <p>Visualization & Reporting:</p>
+
+        <ul>
+            <li>Built interactive dashboards and reports for:
+                <ul>
+                  <li>Sales channels</li>
+                  <li>Branch performance</li>
+                </ul>
+            </li>
+            <li>Delivered actionable insights through data visualization tools</li>
+        </ul>
+    </div>
+
+</div>
+
+</div>
+
+<script>
+// SKILL ANIMATION
+window.onload = ()=>{
+    document.querySelectorAll(".fill").forEach(el=>{
+        el.style.width = el.dataset.width;
+    });
+}
+
+// IMAGE PREVIEW
+function loadImage(e){
+    document.getElementById("preview").src =
+    URL.createObjectURL(e.target.files[0]);
+}
+
+// SIMPLE DARK MODE (optional)
+function toggleDark(){
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
